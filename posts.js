@@ -8,7 +8,12 @@ function loadPosts(){
 function displayPosts(posts){
     const postContainer = document.getElementById('post-container');
     for (const post of posts) {
-        console.log(post);
+        const div = document.createElement('div');
+        div.innerHTML = `
+            <h4>User - </h4>
+            <h5>Post - title </h5>
+            <p>Description: </p>
+        `
     }
 }
 loadPosts();
