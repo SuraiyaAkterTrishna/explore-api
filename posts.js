@@ -6,6 +6,7 @@ function loadPosts(){
 }
 
 function displayPosts(posts){
+    const postContainer = document.getElementById('post-container');
     for (const post of posts) {
         console.log(post);
     }
